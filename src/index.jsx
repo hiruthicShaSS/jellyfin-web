@@ -36,6 +36,7 @@ import './components/playback/displayMirrorManager';
 import './components/playback/playerSelectionMenu';
 import './components/themeMediaPlayer';
 import './scripts/autoThemes';
+import './scripts/homePlaylistAutoplay';
 import './scripts/mouseManager';
 import './scripts/screensavermanager';
 

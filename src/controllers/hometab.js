@@ -15,6 +15,8 @@ class HomeTab {
         view.querySelector('.sections').addEventListener('settingschange', onHomeScreenSettingsChanged.bind(this));
     }
     onResume(options) {
+        const apiClient = this.apiClient;
+
         if (this.sectionsRendered) {
             const sectionsContainer = this.sectionsContainer;
 
@@ -27,7 +29,6 @@ class HomeTab {
 
         loading.show();
         const view = this.view;
-        const apiClient = this.apiClient;
         this.destroyHomeSections();
         this.sectionsRendered = true;
         return apiClient.getCurrentUser()
